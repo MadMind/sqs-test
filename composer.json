@@ -1,0 +1,10 @@
+{
+    "name": "madmind/sqs-test",
+    "license": "proprietary",
+    "description": "Test SQS behavior",
+    "type": "project",
+    "minimum-stability": "stable",
+    "require": {
+        "aws/aws-sdk-php": "3.21.6"
+    }
+}

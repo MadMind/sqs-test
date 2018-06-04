@@ -1,0 +1,10 @@
+<?php
+return [
+    'queue_name' => 'sqs-test',
+    'sqs_config' => [
+        'profile' => 'default',
+        'region' => 'us-west-2',
+        'version' => '2012-11-05',
+        //'endpoint' => 'http://localhost:9324/'
+    ],
+];
