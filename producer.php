@@ -47,7 +47,7 @@ function createBatch(int $count, int $from = 1, int $to = null)
             $time = microtime(true);
 
             return [
-                'Id' => sprintf('%s-%d/%d', $time, $i, $count),
+                'Id' => md5(sprintf('%s-%d-%d', str_replace(' ', '_', $time), $i, $count)),
                 'MessageBody' => sprintf('Message %d/%d - %s', $i, $count, $time),
             ];
         },
